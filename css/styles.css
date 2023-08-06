@@ -41,3 +41,11 @@ a {
   text-decoration: none;
   color: #fff;
 }
+
+/* Add styles for the sections */
+section {
+  background-color: rgba(128, 128, 128, 0.2); /* Set the grey background with high transparency */
+  margin-left: 220px; /* Add a left margin to push the sections to the right of the navbar */
+  padding: 20px;
+  min-height: 100vh; /* Set a minimum height to prevent content overlap */
+}
