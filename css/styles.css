@@ -1,0 +1,43 @@
+/* Add styles for the purple navigation bar and set the background image */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("../assets/logo.jpg"); /* Set the background image */
+  background-repeat: no-repeat;
+  background-position: center; /* Center the background image */
+  background-attachment: fixed; /* Keep the background fixed when scrolling */
+  background-size: 60%; 
+}
+
+nav {
+  background-color: rgba(5, 40, 158, 0.884); /* Set the navigation bar background to purple */
+  color: #fff;
+  padding: 10px;
+  width: 200px; /* Set the width of the vertical navbar */
+  position: fixed; /* Add 'position: fixed' to position the navbar */
+  top: 0;
+  left: 0;
+  height: 100vh; /* Set the height to fill the viewport */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+li {
+  margin: 20px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
