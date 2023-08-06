@@ -43,9 +43,42 @@ a {
 }
 
 /* Add styles for the sections */
-section {
-  background-color: rgba(128, 128, 128, 0.2); /* Set the grey background with high transparency */
+#home {
+  background-color:rgba(128, 128, 128, 0.1);
   margin-left: 220px; /* Add a left margin to push the sections to the right of the navbar */
   padding: 20px;
   min-height: 100vh; /* Set a minimum height to prevent content overlap */
+}
+
+section {
+  background-color: rgba(128, 128, 128, 0.4); /* Set the grey background with high transparency */
+  margin-left: 220px; /* Add a left margin to push the sections to the right of the navbar */
+  padding: 20px;
+  min-height: 100vh; /* Set a minimum height to prevent content overlap */
+}
+
+/* Styles for the Font Awesome icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 24px;
+  color: #000;
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.social-icons a:last-child {
+  margin-right: 0;
+}
+
+.social-icons a:hover {
+  background-color: #ccc;
 }
