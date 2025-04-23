@@ -1,0 +1,111 @@
+* {
+  /* This accounts for padding in element size */
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  /* Evenly distribute items horizontally*/
+  justify-content: space-between;
+  /* Align items vertically in the center */
+  align-items: center;
+  background-color: #c0a979;
+  /* Text color */
+  color: white;
+}
+
+.navbar-title {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+
+.navbar-links ul {
+  /* Margin and padding here are primarily used to override user agent styles */
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  /* Remove bullet points */
+  list-style:  none;
+}
+
+.navbar-links li a {
+  /* Remove underline and blue text from links */
+  text-decoration: none;
+  color: #222222;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1rem;
+  /* This applies hover effect to height of container rather than of text */
+  display: block;
+}
+
+.navbar-links li a:hover {
+  color: white;
+  background-color: rgb(0, 0, 0, 0.2)
+}
+
+.navbar-hamburger {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: None;
+  /* Around hamburger bars in a column */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.navbar-hamburger .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #222222;;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  /* Show hamburger and hide links when display is small*/
+  .navbar-hamburger {
+    display: flex;
+  }
+  
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    /* Stack vertically for smaller screens */
+    flex-direction: column;
+    /* Move items to the left side of the page */
+    align-items: flex-start;
+  }
+
+  .navbar-links ul {
+    /* Stack vertically for when hamburger expands */
+    flex-direction: column;
+    /* Centers links in conjunction with links width */
+    width: 100%;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
