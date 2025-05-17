@@ -8,10 +8,19 @@
 </head>
 
 <body>
+    <header>
+        <div class="section-container">
+            <div class="logo-container">
+                <div>
+                    <div class="logo">T&Z</div>
+                    <div class="subtitle">MOTORSPORTS</div>
+                </div>
+            </div>
+        </div>
+    </header>
     <!-- BEGIN NAVBAR -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="index.html" class="navbar-title">T&Z Motorsports</a>
+    <nav>
+        <div class="navbar">
             <a href="#" class="navbar-hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -19,6 +28,7 @@
             </a>
             <div class="navbar-links">
                 <ul>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="prerunner.html">Prerunner Projects</a></li>
                     <li><a href="mustang.html">Mustang Projects</a></li>
                     <li><a href="events.html">Events</a></li>
@@ -31,38 +41,66 @@
     <!-- END NAVBAR -->
 
     <!-- BEGIN HERO -->
-    <div class="hero">
-        <h1>T&Z Motorsports</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non illum, ducimus quae veritatis nulla hic eligendi cumque aspernatur debitis modi, unde eaque incidunt esse obcaecati molestias iure, accusantium ullam eius?</p>
-        <a href="team.html">
-            <button type="button" >Meet the Team</button>
-        </a>
+    <div class="section-container">
+        <div class="hero">
+            <h1>T&Z Motorsports</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non illum, ducimus quae veritatis nulla hic eligendi cumque aspernatur debitis modi, unde eaque incidunt esse obcaecati molestias iure, accusantium ullam eius?</p>
+            <a href="team.html">
+                <button type="button">Meet our team</button>
+            </a>
+        </div>
     </div>
     <!-- END HERO -->
 
     <!-- BEGIN FEATURED PROJECTS -->
-    <section>
-        <h1 class="section-heading">Featured Projects</h1>
-        <div class="container">
-            I'm a project!
-        </div>
-    </section>
+    
+    <div class="section-container">
+        <section>
+            <h1 class="section-heading">Current Projects</h1>
+            <div class="flex-container">
+
+                <div class="project-card">
+                    <img src="img/mustang_side.jpg">
+                    <div class="project-description">
+                        <h3>Mustang Projects</h3>
+                        <p>This is a real good description of the project. The best decription. Nothing descriptier.</p>
+                        <a href="mustang.html">
+                            <button type="button">View Projects</button>
+                        </a>
+                    </div> 
+                </div>
+
+                <div class="project-card">
+                   <img src="img/pickup_bridge_rect.png">
+                    <div class="project-description">
+                        <h3>Prerunner Projects</h3>
+                        <p>This is a real good description of the project. The best decription. Nothing descriptier.</p>
+                        <a href="prerunner.html">
+                            <button type="button">View Projects</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
     <!-- END FEATURED PROJECTS -->
 
     <!-- BEGIN UPCOMING EVENTS -->
-    <section>
-        <h1 class="section-heading">Upcoming Events</h1>
-        <div class="container">
-            I'm an event!
-        </div>
-    </section>
+    <div class="section-container">
+        <section>
+            <h1 class="section-heading">Upcoming Events</h1>
+            <div class="flex-container">
+                <div class="flex-card">
+                    I'm an event
+                </div>
+                <div class="flex-card">
+                    I'm an event
+                </div>
+            </div>
+        </section>
+    </div>
     <!-- END UPCOMING EVENTS -->
-
-
-
-
-
-
 
     <!-- <p>This is where you can keep up to date with all our builds and events.</p>
             
@@ -71,10 +109,11 @@
     <a href="https://instagram.com/tandzmotorsports/">Instagram</a>
     <a href="https://www.tiktok.com/@tandzmotorsports/">TikTok</a> -->
 
-    <footer>
-        <!-- TODO: What type of stuff normally goes in a footer? -->
-        <p>&copy; 2025 T&Z Motorsports. All rights reserved.</p>
-    </footer>
+    <div class="section-container">
+        <footer>
+            <!-- TODO: What type of stuff normally goes in a footer? -->
+            <p>&copy; 2025 T&Z Motorsports. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
-
 </html>
